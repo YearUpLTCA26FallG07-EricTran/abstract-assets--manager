@@ -49,7 +49,7 @@ public class Vehicle extends Asset {
         int age = Math.max(0, Year.now().getValue() - year);
         BigDecimal value = initialValueOfVehicle(age);
 
-        return super.getValue();
+        return value;
     }
 
     private BigDecimal initialValueOfVehicle(int age) {
