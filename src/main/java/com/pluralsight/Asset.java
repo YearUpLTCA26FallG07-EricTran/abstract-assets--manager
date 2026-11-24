@@ -43,9 +43,7 @@ public abstract class Asset {
         this.originalCost = originalCost;
     }
 
-    public BigDecimal getValue() {
-        return this.originalCost;
-    }
+    public abstract BigDecimal getValue();
 
 
     @Override
